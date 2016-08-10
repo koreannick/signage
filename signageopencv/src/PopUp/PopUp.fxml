@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="395.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PopUp.PopUpController">
+   <children>
+      <Button fx:id="ok_btn" layoutX="105.0" layoutY="157.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="62.0" text="전송" />
+      <Button fx:id="cancle_btn" layoutX="229.0" layoutY="157.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="62.0" text="취소" />
+      <Label alignment="CENTER" layoutX="32.0" layoutY="34.0" prefHeight="19.0" prefWidth="331.0" text="핸드폰 번호를 입력해 주세요" />
+      <TextField layoutX="105.0" layoutY="86.0" />
+   </children>
+</Pane>

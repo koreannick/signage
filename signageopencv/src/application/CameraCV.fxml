@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CameraCVController">
+   <center>
+      <ImageView fx:id="currentFrame" />
+   </center>
+   <bottom>
+      <HBox alignment="center">
+      	<padding>
+      		<Insets bottom="25" left="25" right="25" top="25" />
+      	</padding>
+         <children>
+           <Button fx:id="button" mnemonicParsing="false" onAction="#startCamera" text="StartCamera" />
+            <Button fx:id="button2" mnemonicParsing="false" onAction="#stopCamera" text="Finish" />
+            <Button fx:id="send_btn" mnemonicParsing="false" onAction="#startPop" text="send" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

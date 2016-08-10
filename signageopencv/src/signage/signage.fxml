@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signage.signageController">
+   <children>
+      <Accordion prefHeight="448.0" prefWidth="900.0">
+        <panes>
+          <TitledPane animated="false" text="광고1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+               <font>
+                  <Font size="30.0" />
+               </font>
+          </TitledPane>
+          <TitledPane animated="false" text="광고2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+               <font>
+                  <Font size="30.0" />
+               </font>
+          </TitledPane>
+          <TitledPane animated="false" text="광고3">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+               <font>
+                  <Font size="30.0" />
+               </font>
+          </TitledPane>
+            <TitledPane animated="false" prefHeight="259.0" prefWidth="810.0" text="광고5">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="176.0" prefWidth="626.0" />
+               </content>
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </TitledPane>
+            <TitledPane animated="false" text="광고4">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </TitledPane>
+        </panes>
+      </Accordion>
+      <Button fx:id="Camera_btn" layoutX="366.0" layoutY="486.0" mnemonicParsing="false" onAction="#Camera" prefHeight="76.0" prefWidth="168.0" text="카메라" />
+   </children>
+</Pane>
