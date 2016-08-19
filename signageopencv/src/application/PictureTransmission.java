@@ -27,7 +27,7 @@ public class PictureTransmission extends Thread{
 
 		Sender sender = new Sender("AIzaSyAlIF12oXLOCfhLr_gpron52t2_PcRDjvw");
         //기기 토큰값
-        String regId = "eMY8JIKUcEQ:APA91bFir_RIimLu_tgKdaNytyuoQIbNFrlk5GAIdcSFw-CEvwPVAEk6RtdeSNQiffE2fEPj5garQd7emjTLsVLuK5skOBIusrXaLOEx_51d3YM7AgUCWSlVjmyABXH4ejUZSBZNwdnb";
+        String regId = "dIHkZ5SGvYA:APA91bGcwPNL3l_fIBmt1jl2etAAOy88x9yw0hEQXlZDNuX-dL5Gv67MrR9Bt5wiciorQVufUwBe1UxQ_yIxQWdOxMNsEiuK3Nqlu5yyfprjXO6tDgWaLc1Ga1fWjmTp17Lii2rfquLg";
         
         //푸싱메시지 메시지 & 한글이 안됨 ㅠ
         Message message = new Message.Builder().addData("result", "Receive Picture").build();

@@ -28,11 +28,10 @@ import javafx.stage.Stage;
 
 public class CameraCVController {
 
-	static int fNumber=0;	
+	static int fNumber;	
 	static String fName;
 
 	//몇번째 사진인가?
-	int a= 0;
 	
 	@FXML
 	private Button button;
@@ -55,6 +54,9 @@ public class CameraCVController {
 	protected void startCamera(ActionEvent event)
 	//카메라가 작동하는 함수, FXML의 버튼의 액션 함수
 	{
+		fileNumListener fileNum = new fileNumListener();
+		fileNum.start();
+		
 		if (!this.cameraActive)//카메라가 꺼져있다면
 		{
 			this.capture.open(0); //1번 카메라와 연결// 노트북 내장 카메라가 0번, USB카메라가 1번 
@@ -144,8 +146,6 @@ public class CameraCVController {
 			socketClient2.start();
 			
 			//다음 사진 저장을 위한 변수
-			fNumber++;
-			System.out.println(a);
 			System.out.println(fName);
 		}
 	}
